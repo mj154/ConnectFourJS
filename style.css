@@ -1,0 +1,45 @@
+body{
+  background-color: grey;
+  overflow: hidden;
+}
+
+
+
+
+#gameboard{
+
+  width: auto;
+  height: auto;
+  background-color: skyblue;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+
+  margin-right: 50px;
+
+}
+
+.grid{
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+
+#playerTurn{
+  font-style: italic;
+  font: arial;
+
+}
+
+
+#col{
+  height: 100px;
+  width: 100px;
+  color: grey;
+  margin: 5px;
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%
+
+
+}
