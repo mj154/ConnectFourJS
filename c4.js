@@ -127,6 +127,7 @@ function checkWin(color)
         cells.push(temp);
     }
 
+  console.log(cells[3][5]);
 
   //check right
   for (let i = 0; i<6; i++)
@@ -170,9 +171,9 @@ function checkWin(color)
       {
         for (let j = 0; j<7; j++)
           {
-            if (i<3)
+            if (i<3&&j<4)
               {
-                if (cells[i][j].id == color) //if we find color, check to the right
+                if (cells[i][j].id == color)
                   {
                         if (cells[i][j].id == color && cells[i+1][j+1].id == color && cells[i+2][j+2].id == color && cells[i+3][j+3].id == color )
                           {
@@ -188,11 +189,11 @@ function checkWin(color)
       {
           for (let j = 0; j<7; j++)
             {
-              if (i<3)
+              if (i<3&&j>2)
                 {
-                  if (cells[i][j].id == color) //if we find color, check to the right
+                  if (cells[i][j].id == color)
                     {
-                          if (cells[i][j].id == color && cells[i+1][j-1].id == color && cells[i+2][j-2].id == color && cells[i+3][j-3].id == color )
+                          if (cells[i][j].id == color && cells[i+1][j-1].id == color && cells[i+2][j-2].id == color && cells[i+3][j-3].id == color)
                             {
                               return true;
                             }
