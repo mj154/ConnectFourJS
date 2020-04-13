@@ -14,16 +14,14 @@ body{
   display: inline-block;
   overflow: hidden;
   float: left;
-
   margin-right: 50px;
 
 }
 
-.grid{
-  height: auto;
-  width: auto;
-  display: inline-block;
+#textContainerDiv{
+  font-size: 40px;
 }
+
 
 #playerTurn{
   font-style: italic;
@@ -31,13 +29,55 @@ body{
 
 }
 
-
-#col{
+#redCol{
   height: 100px;
   width: 100px;
   color: grey;
   margin: 5px;
   background-color: red;
+  display: inline-block;
+  border-radius: 50%
+}
+
+#blueCol{
+  height: 100px;
+  width: 100px;
+  color: grey;
+  margin: 5px;
+  background-color: blue;
+  display: inline-block;
+  border-radius: 50%
+}
+
+#hoverCol{
+  height: 100px;
+  width: 100px;
+  color: grey;
+  margin: 5px;
+  background-color: yellow;
+  display: inline-block;
+  border-radius: 50%
+}
+
+#bottomEmptyCol{
+  height: 100px;
+  width: 100px;
+  color: grey;
+  margin: 5px;
+  background-color: grey;
+  display: inline-block;
+  border-radius: 50%
+
+
+}
+
+
+#emptyCol{
+  height: 100px;
+  width: 100px;
+  color: grey;
+  margin: 5px;
+  background-color: grey;
   display: inline-block;
   border-radius: 50%
 
